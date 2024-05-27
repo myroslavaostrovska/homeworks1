@@ -4,22 +4,27 @@
     font-family: sans-serif;
 }
 
-.mail, .tel{
-    padding-left: 5px;
-    padding-right: 5px;
-    display: inline;
-    float: none;
-
+header img{
+    width: 180px; 
+    height: 26px;
+    padding: 10px;
+    display: inline-block; 
+    margin: auto;
 }
 
-li{
+ul li{
     padding-left: 5px;
     padding-right: 5px;
-    display: inline;
+    display: inline-block;
 }
 
-ul{
-    padding: 0;
+header div{
+    display: inline-block;
+}
+
+.right{
+    display: inline-block;
+    float: right;
 }
 
 h1{
