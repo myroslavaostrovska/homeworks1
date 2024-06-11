@@ -27,6 +27,20 @@ button {
     border: none;
 }
 
+img {
+    width: 340px;
+    height: 264px;
+}
+
+h3, p {
+    padding-left: 14px;
+}
+
+main div {
+    display: inline-block;
+    padding: 19px;
+}
+
 p {
     color: rgba(117, 117, 117, 1);
 }
