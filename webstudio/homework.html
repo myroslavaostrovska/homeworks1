@@ -4,37 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студія - WebStudio</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
     <header>
         <section>
             <a href="/webstudio/homework.html">
-                <img src="/images/webstudio.png" alt="WebStudio" style="width: 180px; height: 26px; display: inline-block; padding: 10px;">
+                <img src="/images/webstudio.png" alt="WebStudio" class="header_item">
             </a>
-            <div>
-              <ul>
-                <li style="color: rgba(33, 150, 243, 1);"><a href="/webstudio/homework.html">Студія</a></li>
-                <li><a href="/portfolio/portfolio.html">Портфоліо</a></li>
-                <li><a href="#">Контакти</a></li>
-                <li><a href="mailto: info@devstudio.com" style="color: rgba(33, 150, 243, 1);">info@devstudio.com</a></li>
-                <li><a href="tel: +38 096 111 11 11" style="color: rgba(117, 117, 117, 1);">+38 096 111 11 11</a></li>
-              </ul>
+            <div class="header_navigation">
+                <ul class="header_navigation--list">
+                    <li class="header_navigation--item">
+                        <a href="/webstudio/homework.html" class="header_navigation--link">Студія</a>
+                    </li>
+                    <li class="header_navigation--item">
+                        <a href="/portfolio/portfolio.html" class="header_navigation--link">Портфоліо</a>
+                    </li>
+                    <li class="header_navigation--item">
+                        <a href="#" class="header_navigation--link">Контакти</a>
+                    </li>
+                    <li class="header_navigation--item">
+                        <a href="mailto: info@devstudio.com" class="header_navigation--link">info@devstudio.com</a>
+                    </li>
+                    <li class="header_navigation--item">
+                        <a href="tel: +38 096 111 11 11" class="header_navigation--link">+38 096 111 11 11</a>
+                    </li>
+                </ul>
           </div>
-    </section>
+        </section>
     </header>
     <br><br>
     
     <main>
-        <section style="background-color: rgba(47, 48, 58, 1); width: 1128px; height: 500px; top: 80px;">
-            <div style="display: block;">
-                <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br>ВАШОГО БІЗНЕСУ</h1>
-                <button>Замовити послугу</button>
+        <section class="main_section--first">
+            <div class="main_item">
+                <h1 class="main_title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br>ВАШОГО БІЗНЕСУ</h1>
+                <button class="main_button">Замовити послугу</button>
             </div>
         </section><br><br>
 
-        <section>
+        <section class="main_section--second">
             <div>
                 <h4>УВАГА ДО ДЕТАЛЕЙ</h4>
                 <p>Ідейні міркування, і навіть початок<br> повсякденної роботи з формування<br> позиції.</p>
@@ -53,15 +63,15 @@
             </div>
         </section>
 
-        <section style="padding: auto;">  
+        <section class="main_section--third">  
             <h2>Чим ми займаємося</h2>
-            <div style="display: inline;">
+            <div class="main_item">
                 <img src="/Images/img1.png" alt="img1">
             </div>
-            <div style="display: inline;">
+            <div class="main_item">
                 <img src="/Images/img3.png" alt="img2">
             </div>
-            <div style="display: inline;">
+            <div class="main_item">
                 <img src="/Images/img2.png" alt="img3">
             </div>
         </section> 
@@ -69,36 +79,35 @@
     <br><br><br><br>
 
     <footer>
-        <section style="background-color: rgba(245, 244, 250, 1); width: 1148px; height: 600px; top: 80px;">
-            <h2>Наша команда</h2>
+        <section class="footer_section--first">
+            <h2 class="footer_section--title">Наша команда</h2>
             <div>
-                <img src="/Images/man1.jpg" alt="first man" style="width: 270px; height: 260px;"><br>
+                <img src="/Images/man1.jpg" alt="first man" class="footer_item"><br>
                 <span>Ігор Дем'яненко</span>
                 <p>Product Designer</p>
             </div>
             <div>
-                <img src="/images/woman.jpg" alt="woman" style="width: 270px; height: 260px;"><br>
+                <img src="/images/woman.jpg" alt="woman" class="footer_item"><br>
                 <span>Ольга Рєпіна</span>
                 <p>Frontend Developer</p>
             </div>
             <div>
-                <img src="/images/man2.jpg" alt="second man" style="width: 270px; height: 260px;"><br>
+                <img src="/images/man2.jpg" alt="second man" class="footer_item"><br>
                 <span>Микола Тарасов</span>
                 <p>Marketing</p>
             </div>
             <div>
-                <img src="/images/man3.jpg" alt="third man" style="width: 270px; height: 260px;"><br>
+                <img src="/images/man3.jpg" alt="third man" class="footer_item"><br>
                 <span>Михайло Єрмаков</span>
                 <p>UI Designer</p>
             </div>
         </section>
-        <section style="background-color: rgba(47, 48, 58, 1); width: 1148px; height: 252px; top: 2094px;">
-
-            <div style="display: row; justify-content: left; align-items: center; padding-top: 75px; padding-left: 140px;">
-                <img src="/images/webstudio2.png" alt="WebStudio" style="width: 180px; height: 26px;"><br><br>
-                <p style="color: white;">м. Київ, пр-т Лесі Українки, 26<br>
-                    <a href="mailto: info@devstudio.com">info@devstudio.com</a><br>
-                    <a href="tel: +38 096 111 11 11">+38 096 111 11 11</a>
+        <section class="footer_section--second">
+            <div class="footer_conteiner">
+                <img src="/images/webstudio2.png" alt="WebStudio" class="footer_conteiner--image"><br><br>
+                <p class="footer_conteiner--address">м. Київ, пр-т Лесі Українки, 26<br>
+                    <a href="mailto: info@devstudio.com" class="footer_conteiner--link">info@devstudio.com</a><br>
+                    <a href="tel: +38 096 111 11 11" class="footer_conteiner--link">+38 096 111 11 11</a>
                 </p>
             </div>
         </section>
