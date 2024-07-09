@@ -1,9 +1,11 @@
 {
 	"folders": [
 		{
+			"name": "lesson-6",
 			"path": ".."
 		},
 		{
+			"name": "semantic_and_classes",
 			"path": "../../../../Desktop/semantic_and_classes"
 		}
 	],
