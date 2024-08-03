@@ -62,22 +62,22 @@ p {
     top: 80px;
 }
 
-.main_item:first-child {
+.main_section-first--item:first-child {
     display: block;
 }
 
-.main_item:not(:first-child) {
+.main_section-first--item:not(:first-child) {
     display: inline;
 }
 
-.main_title {
+.main_section--title {
     color: white;
     text-align: center;
     padding-top: 200px; 
     padding-bottom: 60px
 }
 
-.main_button {
+.main_section--button {
     width: 210px;
     height: 50px;
     border-radius: 4px;
@@ -119,7 +119,7 @@ main img {
     top: 80px;
 }
 
-.footer_section--title {
+.footer_section-first--title {
     display: flex; 
     justify-content: center; 
     align-items: center; 
