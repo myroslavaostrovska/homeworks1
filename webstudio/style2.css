@@ -45,7 +45,8 @@ p {
     padding-right: 5px;
 }
 
-.header_navigation--item:first-child, :nth-child(4) {
+.header_navigation--item:first-child, 
+.header_navigation--item:nth-child(4) {
     color: rgba(33, 150, 243, 1);
 }
 

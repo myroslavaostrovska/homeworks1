@@ -23,6 +23,18 @@ a:hover {color:inherit}
     align-content: baseline;
 }
 
+.main_container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.main_container--firstimage {
+    box-shadow: 7px 14px 16px 0px rgba(107,103,107,1);
+    -moz-box-shadow: 7px 14px 16px 0px rgba(107,103,107,1);
+    box-shadow: 7px 14px 16px 0px rgba(107,103,107,1);
+}
+
 ul {
     display: flex;
     margin: auto;
