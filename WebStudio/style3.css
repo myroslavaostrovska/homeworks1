@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* HEADER STYLES */
+
+header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header_leftside {
+  display: flex;
+}
+
+.header_leftside--image {
+  margin-right: 93px;
+}
+
+.header_navigation {
+  display: flex;
+}
+
+.header_navigation--item a {
+  transition: 0.5s;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.41px;
+  letter-spacing: 0.02em;
+}
+
+.header_navigation--item a:hover {
+  transition: 0.5s;
+  color: #2196f3;
+}
+
+.header_navigation--item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header_rigthside a:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header_rigthside a {
+  transition: 0.5s;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.41px;
+  letter-spacing: 0.02em;
+}
+
+.header_rigthside a:hover {
+  transition: 0.5s;
+  color: #2196f3;
+}
+
+
+/* MAIN STYLES */
+.main_conteiner--first {
+    max-width: 538px;
+}
+
+.main_navigation {
+    display: flex;
+    align-items: center;
+}
+
+.main_navigation--item a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    padding: 6px 22px 6px 22px;
+    transition: .5s;
+}
+
+.main_navigation--item a:hover {
+    background-color: #2196F3;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px 0px #0000001F;
+    box-shadow: 0px 1px 2px 0px #00000014;
+    box-shadow: 0px 3px 1px 0px #0000001A;
+    padding: 6px 22px 6px 22px;
+    transition: .5s;
+    color: #FFFFFF;
+}
