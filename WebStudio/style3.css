@@ -84,16 +84,17 @@ header {
 
 
 /* MAIN STYLES */
-.main_conteiner--first {
-    max-width: 538px;
-}
-
-.main_navigation {
+.main_container--first {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin: 94px 0 50px 0;
 }
 
-.main_navigation--item a {
+.button:not(:last-child) {
+    margin-right: 8px;
+}
+
+.button a {
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
@@ -101,17 +102,62 @@ header {
     text-align: center;
     background-color: #F5F4FA;
     border-radius: 4px;
-    padding: 6px 22px 6px 22px;
+    border: none;
+    padding: 7px 22px 7px 22px;
     transition: .5s;
 }
 
-.main_navigation--item a:hover {
+.button a:hover {
     background-color: #2196F3;
     border-radius: 4px;
     box-shadow: 0px 2px 2px 0px #0000001F;
     box-shadow: 0px 1px 2px 0px #00000014;
     box-shadow: 0px 3px 1px 0px #0000001A;
-    padding: 6px 22px 6px 22px;
+    padding: 7px 22px 7px 22px;
     transition: .5s;
     color: #FFFFFF;
+}
+
+
+/* CARDS */
+.main_section {
+    max-width: 1170px;
+    width: 100%;
+    align-items: center;
+}
+
+.main_container--second {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.main_container--card {
+    border: 1px solid #EEEEEE;
+}
+
+.main_container--card:first-child {
+    box-shadow: 1px 4px 6px 0px #00000029;
+    box-shadow: 0px 4px 4px 0px #0000000F;
+    box-shadow: 0px 1px 1px 0px #0000001F;
+}
+
+.card_title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #212121;
+    margin: 20px 24px 4px 24px;
+}
+
+.card_text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #757575;
+    margin: 0 24px 20px 24px;
 }
