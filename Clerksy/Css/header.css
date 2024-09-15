@@ -1,0 +1,19 @@
+header {
+    background-color: #163A24;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header_container {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_nav {
+    display: flex;
+    gap: 24px;
+}
