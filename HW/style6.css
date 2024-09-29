@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.box_one {
+    background-color: #ff8888;
+    width: 100px;
+    height: 100px;
+}
+
+.box_two {
+    background-color: #7e8aeb;
+    width: 100px;
+    height: 100px;
+    margin-top: 60px;
+    position: absolute;
+}
+
+.box_three {
+    background-color: #4eef98;
+    width: 100px;
+    height: 100px;
+    margin-top: 120px;
+}
