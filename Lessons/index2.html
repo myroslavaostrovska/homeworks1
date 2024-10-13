@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Backdrop Modal Example</h1>
+        <button id="openModalButton">Open Modal</button>
+    </header>
 
-    <button id="openModal">Open Modal</button>
-
-    <div id="modalBackdrop" class="modal-backdrop" style="display: none;">
+    <div id="modalBackdrop" class="backdrop is-hidden">
         <div class="modal">
-            <h2>Modal Title</h2>
-            <p>This is a simple modal!</p>
-            <button id="closeModal">Close</button>
+            <div id="closeModalButton" class="modal_close--wrapper">✖</div>
+            <h3 class="modal_title">Modal Title</h3>
+            <p>This is a simple modal with a backdrop.</p>
+            <button class="form_submit" id="submitButton">Submit</button>
         </div>
     </div>
 

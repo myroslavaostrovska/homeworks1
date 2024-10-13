@@ -1,20 +1,28 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const modalBackdrop = document.getElementById('modalBackdrop');
-    const openModalButton = document.getElementById('openModal');
-    const closeModalButton = document.getElementById('closeModal');
+// Select the modal backdrop and close button
+const modalBackdrop = document.getElementById('modalBackdrop');
+const closeModalButton = document.getElementById('closeModalButton');
+const openModalButton = document.getElementById('openModalButton');
 
-    openModalButton.addEventListener('click', () => {
-        modalBackdrop.style.display = 'flex';
-    });
+// Function to open the modal
+function openModal() {
+    modalBackdrop.classList.remove('is-hidden');
+}
 
-    closeModalButton.addEventListener('click', () => {
-        modalBackdrop.style.display = 'none';
-    });
+// Function to close the modal
+function closeModal() {
+    modalBackdrop.classList.add('is-hidden');
+}
 
-    // Close modal when clicking outside the modal
-    modalBackdrop.addEventListener('click', (event) => {
-        if (event.target === modalBackdrop) {
-            modalBackdrop.style.display = 'none';
-        }
-    });
+// Event listener for the open button
+openModalButton.addEventListener('click', openModal);
+
+// Event listener for the close button
+closeModalButton.addEventListener('click', closeModal);
+submitButton.addEventListener('click', closeModal);
+
+// Close the modal when clicking outside of it (on the backdrop)
+modalBackdrop.addEventListener('click', (event) => {
+    if (event.target === modalBackdrop) {
+        closeModal();
+    }
 });
