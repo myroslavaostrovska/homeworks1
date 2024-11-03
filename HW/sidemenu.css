@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Боковая панель меню */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100vh;
+  background-color: #888;
+  transition: width 0.3s;
+  overflow-x: hidden;
+}
+
+/* Расширение боковой панели при наведении */
+.side-menu:hover {
+  width: 250px;
+}
+
+/* Текст "Menu here" */
+.side-menu .menu-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: rotate(-90deg);
+  transform-origin: left;
+  color: white;
+  font-size: 16px;
+  white-space: nowrap;
+  padding-left: 10px;
+}
+
+/* Ссылки меню */
+.menu-items {
+  display: none;
+  margin-top: 50px;
+  padding-left: 10px;
+}
+
+/* Показ меню при наведении */
+.side-menu:hover .menu-items {
+  display: block;
+}
+
+.side-menu:hover .menu-text {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-items a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.menu-items a:hover {
+  background-color: #666;
+}
+
+/* Стиль для пунктов меню (декоративные иконки) */
+.menu-items a::before {
+  content: "♦️";
+  color: gold;
+  margin-right: 8px;
+  transition: 0.5s;
+}
+
+.menu-items a:hover::before {
+  color: rgb(227, 148, 161);
+  transition: 0.5s;
+}
+
+.menu-text {
+  padding-top: 50px;
+}
