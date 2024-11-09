@@ -1,5 +1,38 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+}
+
 .cube {
-    background-color: red;
-    width: 100px;
-    height: 100px;
+  background-color: #ea0706;
+  width: 100px;
+  height: 100px;
+  animation-name: translateElement;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+
+/* Animation */
+@keyframes translateElement {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    25%{
+        transform: translate(0px, 200px);
+        background-color: #0000f0;
+    }
+    50%{
+        transform: translate(200px, 200px);
+        background-color: #0a9109;
+    }
+    75%{
+        transform: translate(200px, 0px);
+        background-color: #faff07;
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
 }
