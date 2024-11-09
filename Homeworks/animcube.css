@@ -19,6 +19,7 @@ body {
 @keyframes translateElement {
     0%{
         transform: translate(0px, 0px);
+        background-color: #ea0706;
     }
     25%{
         transform: translate(0px, 200px);
@@ -34,5 +35,6 @@ body {
     }
     100%{
         transform: translate(0px, 0px);
+        background-color: #ea0706;
     }
 }
